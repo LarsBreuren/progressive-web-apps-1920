@@ -1,0 +1,14 @@
+<%- include('partials/head') %>
+
+
+<% for(let i=0; i < personData.length; i++) { %>
+<article>
+    <ul>
+        <li>Naam: <%= personData[i].name %></li>
+        <li>Hoogte: <%= personData[i].height %> CM</li>
+        <li>Zwaarte: <%= personData[i].mass %> KG </li>
+    </ul>
+</article>
+<% } %>
+
+<%- include('partials/footer') %>

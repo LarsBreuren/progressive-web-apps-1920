@@ -16,9 +16,10 @@ nav {
 	position: fixed;
 	bottom: 0;
 }
+h1{ color: #fff; font-size: 2em; text-align: center;}
 
-nav p {
-	width: 20%;
+nav a {
+	width: 25%;
 	height: 100%;
 	background-color: #fff;
 	margin: 0;
@@ -26,6 +27,8 @@ nav p {
 	justify-content: center;
 	align-items: center;
 }
+.active,
+nav a:hover{ background-color: #000; color: #fff;}
 
 nav a{
 	text-decoration: none;
@@ -55,7 +58,7 @@ article li {
 	list-style: none;
 }
 
-body main {
+body main section{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;

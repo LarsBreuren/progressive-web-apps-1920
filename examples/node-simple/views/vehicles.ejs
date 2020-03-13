@@ -1,0 +1,16 @@
+<%- include('partials/head') %>
+
+<h1> Verhicles </h1>
+<section>
+<% for(let i=0; i < vehicleData.length; i++) { %>
+<article>
+    <ul>
+        <li>Naam: <%= vehicleData[i].name %></li>
+        <li>Crew: <%= vehicleData[i].crew %> </li>
+        <li>Waarde: <%= vehicleData[i].cost_in_credits %> Credits </li>
+    </ul>
+</article>
+<% } %>
+</section>
+
+<%- include('partials/footer') %>

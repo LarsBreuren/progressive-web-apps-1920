@@ -1,0 +1,16 @@
+<%- include('partials/head') %>
+
+<h1> Starships </h1>
+<section>
+<% for(let i=0; i < starshipsData.length; i++) { %>
+<article>
+    <ul>
+        <li>Naam: <%= starshipsData[i].name %></li>
+        <li>Crew: <%= starshipsData[i].crew %>/ <li>
+        <li>Lengte: <%= starshipsData[i].length %></li>
+    </ul>
+</article>
+<% } %>
+</section>
+
+<%- include('partials/footer') %>

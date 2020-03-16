@@ -8,4 +8,4 @@ Server side rendering the data from SWAPI.
 - Navigation active class
 
 
-Note: Working in the node-simple folder
+

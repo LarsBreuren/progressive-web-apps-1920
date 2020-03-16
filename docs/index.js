@@ -91,6 +91,35 @@ app.get('/starships', function(req, res) {
 	}) 
 });
 
+app.get('/luke', function(req, res) {
+
+	fetch('https://swapi.co/api/people/1')
+	.then(res => {
+		return res.json()
+	})
+
+	.then((json) => {
+		res.render('luke', {
+			lukeData: json,
+		}); 
+	}) 
+});
+
+app.get('/https://swapi.co/api/:cato/:id', function(req, res) {
+	fetch("https://swapi.co/api/" + req.params.cato + "/" + req.params.id)
+	.then(res => {
+		return res.json()
+	})
+
+	.then((json) => {
+		res.render('details', {
+			details: json,
+		}); 
+	}) 
+});
+
+
+
 // Actually set up the server
 app.listen(config.port, function() {
 	console.log(`Application started on port: ${config.port}`);

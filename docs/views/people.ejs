@@ -2,15 +2,17 @@
 
 <h1> People </h1>
 <section>
-<% for(let i=0; i < personData.length; i++) { %>
-<article>
-    <ul>
-        <li>Naam: <%= personData[i].name %></li>
-        <li>Hoogte: <%= personData[i].height %> CM</li>
-        <li>Zwaarte: <%= personData[i].mass %> KG </li>
-    </ul>
-</article>
-<% } %>
+    <% for(let i=0; i < personData.length; i++) { %>
+    <article>
+        <a href="/<%= personData[i].url %>">
+            <ul>
+                <li>Naam: <%= personData[i].name %></li>
+                <li>Hoogte: <%= personData[i].height %> CM</li>
+                <li>Zwaarte: <%= personData[i].mass %> KG </li>
+        </ul>
+    </a>
+    </article>
+    <% } %>
 </section>
 
 <%- include('partials/footer') %>

@@ -10,7 +10,11 @@
      <a href="/Species"> <p>Species</p></a> -->
 </nav>
 
-
+<script>
+     if(navigator.serviceWorker){
+          navigator.serviceWorker.register('./sw.js');
+     }
+</script>
 </body>
 
 </html>

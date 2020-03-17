@@ -3,7 +3,7 @@
 ## About SWAPI
 With SWAPI you can fetch all kinds of data from the star wars movies. And see what characters are connected to what plant/movie/vehicle.
 
-## API LIMIT?
+## API limit
 SWAPI has a limit of 10.000 API requests per day, should be enough for the average star wars fan right?
 There is no API limit needed.
 

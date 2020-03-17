@@ -1,0 +1,19 @@
+<%- include('partials/head') %>
+
+<h1> Details: <%= lukeData.name %></h1>
+<section>
+    <article>
+        <ul>
+            <%for (var data in lukeData){%>
+                <li><%=data%>:<%=lukeData[data]%></li>    
+                <%}%>
+            </ul>
+    </article>
+</section>
+
+<%- include('partials/footer') %>
+
+
+
+
+

@@ -6,10 +6,10 @@
 
 <% for(let i=0; i < starshipsData.length; i++) { %>
 <article>
-    <a href="/<%= starshipsData[i].url %>">
+    <a href="/starships/<%= starshipsData[i].id %>">
     <ul>
         <li>Naam: <%= starshipsData[i].name %></li>
-        <li>Crew: <%= starshipsData[i].crew %>/ <li>
+        <li>Crew: <%= starshipsData[i].crew %> <li>
         <li>Lengte: <%= starshipsData[i].length %></li>
     </ul>
     </a>

@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'MyWebFont';
-	src: url('STJEDISE.ttf') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	 url('STJEDISE.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+	src: url('DeathStar.ttf') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	 url('DeathStar.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
   }  
 
   *{
@@ -56,6 +56,10 @@ article ul {
 
 article li {
 	list-style: none;
+}
+article a{
+	color: #fff;
+	text-decoration: none;
 }
 
 body main section{

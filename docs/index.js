@@ -21,91 +21,118 @@ app.set('views', 'views');
 app.use(express.static(__dirname + '/public'));
 
 // Create a home route
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
 
 	fetch('https://swapi.co/api/people')
-	.then(res => {
-		return res.json()
-	})
+		.then(res => {
+			return res.json()
+		})
 
-	.then((json) => {
-		res.render('people', {
-		  personData: json.results,
-		}); 
-	}) 
+		.then((json) => {
+			res.render('people', {
+				personData: json.results,
+			});
+		})
 });
 
-app.get('/people', function(req, res) {
-
+app.get('/people', function (req, res) {
 	fetch('https://swapi.co/api/people')
-	.then(res => {
-		return res.json()
-	})
-
-	.then((json) => {
-		res.render('people', {
-		  personData: json.results,
-		}); 
-	}) 
+		.then(res => {
+			return res.json()
+		})
+	
+		.then((items) => {
+			const itemsWithId = items.results.map(item => {
+				const id =  item.url.split("people" + '/')[1]
+				return {
+					id : id,
+					...item
+				}
+			})	
+			res.render('people', {
+				personData: itemsWithId,
+			});			
+		})
 });
 
-app.get('/vehicles', function(req, res) {
+app.get('/vehicles', function (req, res) {
 
 	fetch('https://swapi.co/api/vehicles')
-	.then(res => {
-		return res.json()
-	})
-
-	.then((json) => {
-		res.render('vehicles', {
-		  vehicleData: json.results,
-		}); 
-	}) 
+		.then(res => {
+			return res.json()
+		})
+		.then((items) => {
+			const itemsWithId = items.results.map(item => {
+				const id =  item.url.split("vehicles" + '/')[1]
+				return {
+					id : id,
+					...item
+				}
+			})	
+			res.render('vehicles', {
+				vehicleData: itemsWithId,
+			});			
+		})
 });
 
-app.get('/planets', function(req, res) {
+app.get('/planets', function (req, res) {
 
 	fetch('https://swapi.co/api/planets')
-	.then(res => {
-		return res.json()
-	})
+		.then(res => {
+			return res.json()
+		})
 
-	.then((json) => {
-		res.render('planets', {
-		  planetsData: json.results,
-		}); 
-	}) 
+		.then((items) => {
+			const itemsWithId = items.results.map(item => {
+				const id =  item.url.split("planets" + '/')[1]
+				return {
+					id : id,
+					...item
+				}
+			})	
+			res.render('planets', {
+				planetsData: itemsWithId,
+			});			
+		})
 });
 
-app.get('/starships', function(req, res) {
+app.get('/starships', function (req, res) {
 
 	fetch('https://swapi.co/api/starships')
-	.then(res => {
-		return res.json()
-	})
+		.then(res => {
+			return res.json()
+		})
 
-	.then((json) => {
-		res.render('starships', {
-			starshipsData: json.results,
-		}); 
-	}) 
+	
+		.then((items) => {
+			const itemsWithId = items.results.map(item => {
+				const id =  item.url.split("starships" + '/')[1]
+				return {
+					id : id,
+					...item
+				}
+			})	
+			res.render('starships', {
+				starshipsData: itemsWithId,
+			});			
+		})
 });
 
-app.get('/luke', function(req, res) {
+app.get('/luke', function (req, res) {
 
 	fetch('https://swapi.co/api/people/1')
-	.then(res => {
-		return res.json()
-	})
+		.then(res => {
+			return res.json()
+		})
 
-	.then((json) => {
-		res.render('luke', {
-			lukeData: json,
-		}); 
-	}) 
+		.then((json) => {
+			res.render('luke', {
+				lukeData: json,
+			});
+		})
 });
 
-app.get('/https://swapi.co/api/:cato/:id', function(req, res) {
+app.get('/:cato/:id', function (req, res) {
 	fetch("https://swapi.co/api/" + req.params.cato + "/" + req.params.id)
 	.then(res => {
 		return res.json()
@@ -121,7 +148,7 @@ app.get('/https://swapi.co/api/:cato/:id', function(req, res) {
 
 
 // Actually set up the server
-app.listen(config.port, function() {
+app.listen(config.port, function () {
 	console.log(`Application started on port: ${config.port}`);
 });
 

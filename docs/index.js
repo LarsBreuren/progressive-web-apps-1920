@@ -3,12 +3,6 @@ const express = require('express');
 const request = require('request');
 const fetch = require('node-fetch');
 
-// Config object
-const config = {
-	port: 3000
-}
-
-
 const port = process.env.PORT || 3000
 
 // Create new express app in 'app'

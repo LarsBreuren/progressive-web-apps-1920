@@ -47,7 +47,7 @@ body {
 	background-position: cover;
 	margin: 0;
 }
-article,
+.details article,
 section a {
     border: 2px solid #fff;
     width: calc(20% - 2em);

@@ -1,5 +1,8 @@
 # My progressive web app with SWAPI
 
+![Screenshot_5](https://user-images.githubusercontent.com/43336468/76844943-59ad1d80-683e-11ea-8a24-b14bf41eae25.png)
+
+
 ## About SWAPI
 With SWAPI you can fetch all kinds of data from the star wars movies. And see what characters are connected to what plant/movie/vehicle.
 

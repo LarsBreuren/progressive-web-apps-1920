@@ -15,10 +15,10 @@ There is no API limit needed.
   * In the catogories you can click on an item and see further details of that item.
   
 ## installation
-  1 Clone the repository
-  2 Open the terminal on the docs folder
-  3 Give the command 'npm start'
-  4 navigate to localhost:3000
+  1. Clone the repository
+  2. Open the terminal on the docs folder
+  3. Give the command 'npm start'
+  4. navigate to localhost:3000
 
 ## Nice to haves:
 - More modulair code

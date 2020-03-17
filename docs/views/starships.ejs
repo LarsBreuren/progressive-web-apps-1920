@@ -2,19 +2,18 @@
 
 <h1> Starships </h1>
 <section>
-
-
-<% for(let i=0; i < starshipsData.length; i++) { %>
-<article>
+    <% for(let i=0; i < starshipsData.length; i++) { %>
     <a href="/starships/<%= starshipsData[i].id %>">
-    <ul>
-        <li>Naam: <%= starshipsData[i].name %></li>
-        <li>Crew: <%= starshipsData[i].crew %> <li>
-        <li>Lengte: <%= starshipsData[i].length %></li>
-    </ul>
+        <article>
+            <ul>
+                <li>Naam: <%= starshipsData[i].name %></li>
+                <li>Crew: <%= starshipsData[i].crew %>
+                <li>
+                <li>Lengte: <%= starshipsData[i].length %></li>
+            </ul>
+        </article>
     </a>
-</article>
-<% } %>
+    <% } %>
 </section>
 
 <%- include('partials/footer') %>

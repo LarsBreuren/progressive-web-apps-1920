@@ -4,8 +4,14 @@
 	 url('DeathStar.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
   }  
 
-  *{
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+  h1, h2, h3, b, a, nav p{
 	  font-family: "MyWebFont";
+  }
+
+  *{
+	font-family: 'Open Sans', sans-serif;
   }
 nav {
 	display: flex;
@@ -41,13 +47,21 @@ body {
 	background-position: cover;
 	margin: 0;
 }
+article,
+section a {
+    border: 2px solid #fff;
+    width: calc(20% - 2em);
+    margin: 1em;
+    color: #fff;
+	padding: 1em;
+	text-decoration: none;
+}
+section a:hover{
+	border-color: yellow;
+}
 
-article {
-	border: 2px solid #fff;
-	text-align: center;
-	width: calc(20% - 2em);
-	margin: 1em;
-	color: #fff;
+.details article{
+	width: unset;
 }
 
 article ul {
@@ -55,12 +69,10 @@ article ul {
 }
 
 article li {
-	list-style: none;
+    list-style: none;
+    margin: .5em 0;
 }
-article a{
-	color: #fff;
-	text-decoration: none;
-}
+
 
 body main section{
 	display: flex;

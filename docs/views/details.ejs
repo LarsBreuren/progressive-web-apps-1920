@@ -1,11 +1,11 @@
 <%- include('partials/head') %>
 
 <h1> Details: <%= details.name %></h1>
-<section>
+<section class="details">
     <article>
         <ul>
             <%for (var data in details){%>
-                <li><%=data%>:<%=details[data]%></li>    
+                <li><%=data%>: <%=details[data]%></li>    
                 <%}%>
             </ul>
     </article>

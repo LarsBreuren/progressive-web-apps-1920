@@ -8,6 +8,9 @@ const config = {
 	port: 3000
 }
 
+
+const port = process.env.PORT || 3000
+
 // Create new express app in 'app'
 const app = express();
 // Link the templating engine to the express app
@@ -148,8 +151,8 @@ app.get('/:cato/:id', function (req, res) {
 
 
 // Actually set up the server
-app.listen(config.port, function () {
-	console.log(`Application started on port: ${config.port}`);
+app.listen(port, function () {
+	console.log(`Application started on port: ${port}`);
 });
 
 

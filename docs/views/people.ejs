@@ -2,19 +2,16 @@
 
 <h1> People </h1>
 <section>
-
-
     <% for(let i=0; i < personData.length; i++) { %>
-   
-    <article>
-        <a href="/people/<%= personData[i].id%>">
+    <a href="/people/<%= personData[i].id%>">
+        <article>
             <ul>
                 <li>Naam: <%= personData[i].name %></li>
                 <li>Hoogte: <%= personData[i].height %> CM</li>
                 <li>Zwaarte: <%= personData[i].mass %> KG </li>
             </ul>
-        </a>
-    </article>
+        </article>
+    </a>
     <% } %>
 </section>
 

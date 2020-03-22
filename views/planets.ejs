@@ -2,13 +2,13 @@
 
 <h1> Planets </h1>
 <section>
-    <% for(let i=0; i < planetsData.length; i++) { %>
-    <a href="planets/<%= planetsData[i].id %>">
+    <% for(let i=0; i < Data.length; i++) { %>
+    <a href="/planets/<%= Data[i].id %>">
         <article>
             <ul>
-                <li>Naam: <%= planetsData[i].name %></li>
-                <li>Diameter: <%= planetsData[i].diameter %> </li>
-                <li>Klimaat: <%= planetsData[i].climate %> </li>
+                <li>Naam: <%= Data[i].name %></li>
+                <li>Diameter: <%= Data[i].diameter %> </li>
+                <li>Klimaat: <%= Data[i].climate %> </li>
             </ul>
         </article>
     </a>

@@ -27,105 +27,28 @@ app.get('/', function (req, res) {
 
 		.then((json) => {
 			res.render('people', {
-				personData: json.results,
+				Data: json.results,
 			});
 		})
 });
 
-app.get('/people', function (req, res) {
-	fetch('https://swapi.co/api/people')
+app.get('/:cato', function (req, res) {
+	fetch('https://swapi.co/api/'+req.params.cato)
 		.then(res => {
 			return res.json()
 		})
 	
 		.then((items) => {
 			const itemsWithId = items.results.map(item => {
-				const id =  item.url.split("people" + '/')[1]
+				const id =  item.url.split(req.params.cato + '/')[1]
 				return {
 					id : id,
 					...item
 				}
 			})	
-			res.render('people', {
-				personData: itemsWithId,
+			res.render(req.params.cato, {
+				Data: itemsWithId,
 			});			
-		})
-});
-
-app.get('/vehicles', function (req, res) {
-
-	fetch('https://swapi.co/api/vehicles')
-		.then(res => {
-			return res.json()
-		})
-		.then((items) => {
-			const itemsWithId = items.results.map(item => {
-				const id =  item.url.split("vehicles" + '/')[1]
-				return {
-					id : id,
-					...item
-				}
-			})	
-			res.render('vehicles', {
-				vehicleData: itemsWithId,
-			});			
-		})
-});
-
-app.get('/planets', function (req, res) {
-
-	fetch('https://swapi.co/api/planets')
-		.then(res => {
-			return res.json()
-		})
-
-		.then((items) => {
-			const itemsWithId = items.results.map(item => {
-				const id =  item.url.split("planets" + '/')[1]
-				return {
-					id : id,
-					...item
-				}
-			})	
-			res.render('planets', {
-				planetsData: itemsWithId,
-			});			
-		})
-});
-
-app.get('/starships', function (req, res) {
-
-	fetch('https://swapi.co/api/starships')
-		.then(res => {
-			return res.json()
-		})
-
-	
-		.then((items) => {
-			const itemsWithId = items.results.map(item => {
-				const id =  item.url.split("starships" + '/')[1]
-				return {
-					id : id,
-					...item
-				}
-			})	
-			res.render('starships', {
-				starshipsData: itemsWithId,
-			});			
-		})
-});
-
-app.get('/luke', function (req, res) {
-
-	fetch('https://swapi.co/api/people/1')
-		.then(res => {
-			return res.json()
-		})
-
-		.then((json) => {
-			res.render('luke', {
-				lukeData: json,
-			});
 		})
 });
 

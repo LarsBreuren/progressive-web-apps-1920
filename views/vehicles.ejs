@@ -2,13 +2,13 @@
 
 <h1> Verhicles </h1>
 <section>
-    <% for(let i=0; i < vehicleData.length; i++) { %>
-    <a href="/vehicles/<%= vehicleData[i].id %>">
+    <% for(let i=0; i < Data.length; i++) { %>
+    <a href="/vehicles/<%= Data[i].id %>">
         <article>
             <ul>
-                <li>Naam: <%= vehicleData[i].name %></li>
-                <li>Crew: <%= vehicleData[i].crew %> </li>
-                <li>Waarde: <%= vehicleData[i].cost_in_credits %> Credits </li>
+                <li>Naam: <%= Data[i].name %></li>
+                <li>Crew: <%= Data[i].crew %> </li>
+                <li>Waarde: <%= Data[i].cost_in_credits %> Credits </li>
             </ul>
         </article>
     </a>

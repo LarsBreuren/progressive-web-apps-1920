@@ -5,15 +5,16 @@
     <article>
         <ul>
             <%for (var data in details){%>
-                <li><%=data%>: <%=details[data]%></li>    
-                <%}%>
+            <li><%=data%>: <%=details[data]%></li>
+            <%}%>
             </ul>
     </article>
+
 </section>
 
-<%- include('partials/footer') %>
+    <a class="button" href="/<%=link%>">
+        <p> Back to catogory</p>
+    </a>
 
 
-
-
-
+            <%- include('partials/footer') %>

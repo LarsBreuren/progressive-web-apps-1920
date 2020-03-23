@@ -42,6 +42,7 @@ nav a{
 }
 
 body {
+	background-color: #000;
 	background: url("/img/bg.jpg");
 	background-size: cover;
 	background-position: cover;
@@ -56,6 +57,7 @@ section a {
 	padding: 1em;
 	text-decoration: none;
 }
+.button:hover,
 section a:hover{
 	border-color: yellow;
 }
@@ -78,4 +80,17 @@ body main section{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+}
+
+body .button {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 1em;
+    text-decoration: none;
+    position: relative;
+    top: 100px;
+    display: block;
+    width: 20%;
+    margin: auto;
+    text-align: center;
 }

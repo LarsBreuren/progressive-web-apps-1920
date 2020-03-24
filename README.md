@@ -19,7 +19,8 @@ There is no API limit needed.
 ## installation
   1. Clone the repository
   2. Open the terminal on the docs folder
-  3. Give the command `npm start`
+  3 Install dependencies with 'npm install'
+  3. Give the command `npm run dev`
   4. navigate to localhost:3000
   
 ## Live prototype

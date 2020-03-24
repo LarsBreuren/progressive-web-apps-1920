@@ -33,10 +33,14 @@ There is no API limit needed.
     "node-fetch": "^2.6.0"
     
    devDependencies
-    -"gulp": "^4.0.2",
-    -"gulp-clean-css": "^4.3.0",
-    -"gulp-concat-css": "^3.1.0",
-    -"nodemon": "^2.0.2"
+   
+      "gulp": "^4.0.2",
+      
+      "gulp-clean-css": "^4.3.0",
+      
+      "gulp-concat-css": "^3.1.0",
+      
+      "nodemon": "^2.0.2"
 
   
 ## Live prototype

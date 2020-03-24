@@ -25,24 +25,16 @@ There is no API limit needed.
   
   ### Dependencies
   dependencies
-  ` 
-    "ejs": "^2.6.1",
- 
-    "express": "^4.16.4",
-    
-    "node-fetch": "^2.6.0"
-  },`
+    -"ejs": "^2.6.1"
+    -"express": "^4.16.4"
+    -"node-fetch": "^2.6.0"
+  
     devDependencies
- 
-   ` 
-    "gulp": "^4.0.2",
-    
-    "gulp-clean-css": "^4.3.0",
-    
-    "gulp-concat-css": "^3.1.0",
-    
-    "nodemon": "^2.0.2"
-  }`
+    -"gulp": "^4.0.2"
+    -"gulp-clean-css": "^4.3.0"
+    -"gulp-concat-css": "^3.1.0"
+    -"nodemon": "^2.0.2"
+
   
 ## Live prototype
 Link will appear at some point

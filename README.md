@@ -25,6 +25,7 @@ There is no API limit needed.
   
   ### Dependencies
   dependencies
+  
   `"ejs": "^2.6.1",
     
     "express": "^4.16.4",
@@ -32,6 +33,7 @@ There is no API limit needed.
     "node-fetch": "^2.6.0"
   },`
     devDependencies
+    
    `"gulp": "^4.0.2",
     
     "gulp-clean-css": "^4.3.0",

@@ -14,11 +14,9 @@
   "author": "Lars Breuren",
   "license": "ISC",
   "dependencies": {
-    "clean-css": "^4.2.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "node-fetch": "^2.6.0",
-    "request": "^2.88.0"
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

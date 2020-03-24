@@ -1,6 +1,5 @@
 // Require third-party modules
 const express = require('express');
-const request = require('request');
 const fetch = require('node-fetch');
 
 

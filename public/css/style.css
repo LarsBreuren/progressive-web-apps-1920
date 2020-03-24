@@ -1,8 +1,8 @@
-@font-face {
+/* @font-face {
 	font-family: 'MyWebFont';
 	src: url('DeathStar.ttf') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 	 url('DeathStar.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-  }  
+  }   */
 
   @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
@@ -13,26 +13,10 @@
   *{
 	font-family: 'Open Sans', sans-serif;
   }
-nav {
-	display: flex;
-	justify-content: center;
-	height: 50px;
-	width: 100%;
-	background-color: #000;
-	position: fixed;
-	bottom: 0;
-}
+
 h1{ color: #fff; font-size: 2em; text-align: center;}
 
-nav a {
-	width: 25%;
-	height: 100%;
-	background-color: #fff;
-	margin: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
 .active,
 nav a:hover{ background-color: #000; color: #fff;}
 
@@ -42,8 +26,8 @@ nav a{
 }
 
 body {
-	background-color: #000;
 	background: url("/img/bg.jpg");
+	background-color: #000;
 	background-size: cover;
 	background-position: cover;
 	margin: 0;

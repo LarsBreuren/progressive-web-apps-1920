@@ -4,9 +4,12 @@
   "description": "SWAPI Node app",
   "main": "index.js",
   "scripts": {
+    "prestart": "npm run build",
     "start": "npx nodemon",
+    "predev": "npm run build ",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp buildCss",
+    "watch": "gulp watch"
   },
   "author": "Lars Breuren",
   "license": "ISC",

@@ -32,7 +32,12 @@ There is no API limit needed.
 - Link the items to each other.
 
 # Audits
-First audit:
+## First audit:
 ![First audit](https://user-images.githubusercontent.com/43336468/77434617-7074e680-6de1-11ea-8915-d2032a84b9fc.png)
+
+## Second audit:
+This time i've made the app responsive and i have added a manifest file, seems to work well.
+![audit2](https://user-images.githubusercontent.com/43336468/77447088-90130b80-6def-11ea-9165-19df5f56e349.png)
+
 
 

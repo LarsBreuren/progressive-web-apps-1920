@@ -1,0 +1,112 @@
+body nav p {
+  color: #00f;
+}
+@font-face {
+  font-family: MyWebFont;
+  src: url("DeathStar.ttf") format('woff'),url("DeathStar.ttf") format('truetype');
+}
+
+a,
+b,
+h1,
+h2,
+h3,
+nav p {
+  font-family: MyWebFont;
+}
+
+* {
+  font-family: 'Open Sans',sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+
+nav a {
+  width: 25%;
+  height: 100%;
+  background-color: #fff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active,
+nav a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background-color: #000;
+  background: url("../../../../img/bg.jpg");
+  background-size: cover;
+  background-position: cover;
+  margin: 0;
+}
+
+.details article,
+section a {
+  border: 2px solid #fff;
+  width: calc(20% - 2em);
+  margin: 1em;
+  color: #fff;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.button:hover,
+section a:hover {
+  border-color: #ff0;
+}
+
+.details article {
+  width: unset;
+}
+
+article ul {
+  padding: 0;
+}
+
+article li {
+  list-style: none;
+  margin: .5em 0;
+}
+
+body main section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+body .button {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 1em;
+  text-decoration: none;
+  position: relative;
+  top: 100px;
+  display: block;
+  width: 20%;
+  margin: auto;
+  text-align: center;
+}

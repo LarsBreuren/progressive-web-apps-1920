@@ -3,6 +3,7 @@ const express = require('express');
 const request = require('request');
 const fetch = require('node-fetch');
 
+
 const port = process.env.PORT || 3000
 
 // Create new express app in 'app'
@@ -17,10 +18,12 @@ app.set('views', 'views');
 // Sending something (responding) ends the response cycle
 app.use(express.static(__dirname + '/public'));
   
-
 // Create a home route
 app.get('/', function (req, res) {
 			res.render('overview')
+})
+app.get('/offline', function (req, res) {
+	res.render('offline')
 })
 
 			app.get('/:cato', function (req, res) {

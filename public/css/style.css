@@ -59,7 +59,7 @@ section a {
 }
 .button:hover,
 section a:hover{
-	border-color: yellow;
+	border-color: yellow ;
 }
 
 .details article{

@@ -1,4 +1,4 @@
-body nav p { color: green;}
+body nav p { color: #000;}
 
 nav a {
 	width: 25%;
@@ -18,4 +18,11 @@ nav {
 	background-color: #000;
 	position: fixed;
 	bottom: 0;
+}
+.active,
+nav a:hover{ background-color: #000; color: #fff;}
+nav a:hover > p{color: #fff;}
+nav a{
+	text-decoration: none;
+	color: #000;
 }

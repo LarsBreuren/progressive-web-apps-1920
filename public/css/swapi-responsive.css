@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1200px) {
+    body {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .details article,
+    section a {
+        padding: .2em;
+        text-align: center;
+        width: calc(33.333333% - 1em);
+        margin: .5em;
+    }
+
+.details article{ width: unset;}
+}
+
+@media only screen and (max-width: 768px) {
+    body main section {
+        justify-content: center;
+    }
+
+    .details article,
+    section a {
+        width: calc(40% - 4em);
+        margin: 2em;
+    }
+    .details article{ width: unset;}
+}
+
+@media only screen and (max-width: 600px) {
+
+    .details article,
+    section a {
+        width: 90%;
+        margin: 1em 0;
+    }
+    body .button {
+        top: 20px;
+        width: 50%;
+        padding: 0;
+    }
+    body {
+        margin-bottom: 75px;
+    }
+}

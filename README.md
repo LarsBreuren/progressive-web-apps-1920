@@ -27,9 +27,8 @@ There is no API limit needed.
 Link will appear at some point
 
 ## Audits performance
-I had a hard time trying to make the app as fast as possible. The API has very slow response times and from time to time a bit unreliable. I tried to score as high as possible on every aspect in the audits, performance is not bad right now.
-I've used gulp with gulp clean css & gulp concat to combine and minify all my CSS files. This worked really well and i managed to improve the performance.
-
+I had a hard time trying to make the app as fast as possible. The API has very slow response times and from time to time a bit unreliable.
+I've used gulp with gulp clean css & gulp concat to combine and minify all my CSS files. This worked pretty good as the file size was minimized and so was the download time for that file.
 ### First audit:
 ![First audit](https://user-images.githubusercontent.com/43336468/77434617-7074e680-6de1-11ea-8915-d2032a84b9fc.png)
 

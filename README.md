@@ -24,15 +24,14 @@ There is no API limit needed.
   4. navigate to localhost:3000
   
   ### Dependencies
-  `  
-  "dependencies": {
+  `   "dependencies": {
     "ejs": "^2.6.1",
     
     "express": "^4.16.4",
     
     "node-fetch": "^2.6.0"
   },
-  "devDependencies": {
+  `"devDependencies": {
     "gulp": "^4.0.2",
     
     "gulp-clean-css": "^4.3.0",

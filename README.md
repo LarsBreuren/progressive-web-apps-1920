@@ -2,10 +2,10 @@
 
 ## Table of contents
 - [API](#about-swapi)
-- Install
-- Live prototype
-- Performance
-- Conclusion
+- [Install](#installation)
+- [Live prototype](#live-prototype)
+- [Audits performance](#audits-performance)
+- [Conslusion](#conclusion)
 
 ![Screenshot_5](https://user-images.githubusercontent.com/43336468/76844943-59ad1d80-683e-11ea-8a24-b14bf41eae25.png)
 
@@ -21,31 +21,19 @@ There is no API limit needed.
   2. Open the terminal on the docs folder
   3. Give the command `npm start`
   4. navigate to localhost:3000
-
-## Features
-  * Check the catogories: people, vehicles, planets and startships.
-  * In the catogories you can click on an item and see further details of that item.
   
+## Live prototype
+Link will appear at some point
 
-
-## Nice to haves:
-- More modulair code
-- Search option
-- Navigation active class
-- Link the items to each other.
-
-# Audits
-## First audit:
+## Audits performance
+### First audit:
 ![First audit](https://user-images.githubusercontent.com/43336468/77434617-7074e680-6de1-11ea-8915-d2032a84b9fc.png)
 
-## Second audit:
+### Second audit:
 This time i've made the app responsive and i have added a manifest file, seems to work well.
 ![audit2](https://user-images.githubusercontent.com/43336468/77447088-90130b80-6def-11ea-9165-19df5f56e349.png)
 
-## Feedback
-1. ik zou graag feedback willen over die opbouw van mijn code. Ik heb het idee dat mijn index.js veel modulairder kan. Ook de routing een stuk slimmer, heb nu voor elke catogorie een route.
-2. De app is vrij langzaam, nu komt dat volgens mij omdat ik bij elke call vrij veel onnodige data binnenkrijg. Is er een manier om dit te checken en zonodig aan te passen. (API is trouwens wel wat langzaam en valt soms weg).
-3. Wat zou ik nog meer kunnen doen met een service worker voor deze use case ipv alleen offline beschikbaar
+## conclusion
 
 
 

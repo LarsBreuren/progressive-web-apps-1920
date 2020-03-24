@@ -44,7 +44,8 @@ There is no API limit needed.
 
   
 ## Live prototype
-https://fierce-mesa-63813.herokuapp.com/people/
+<a href="https://fierce-mesa-63813.herokuapp.com/people/" target="_blank">Live prototype link</a>
+
 
 ## Audits performance
 I had a hard time trying to make the app as fast as possible. The API has very slow response times and from time to time a bit unreliable.

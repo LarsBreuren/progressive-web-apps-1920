@@ -8,7 +8,7 @@ const CORE_ASSETS = [
 ]
 
 self.addEventListener('install', event => {
-    event.waitUntil(
+    event.waitUntil( //extend lifetime to prevent stopping sw
     caches.open(CORE_CACHE).then(function(cache) {
         return cache.addAll(CORE_ASSETS).then(() => self.skipWaiting());
     })

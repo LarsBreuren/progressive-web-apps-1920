@@ -23,8 +23,29 @@ There is no API limit needed.
   3. Give the command `npm run dev`
   4. navigate to localhost:3000
   
+  ### Dependencies
+  dependencies
+  
+    "ejs": "^2.6.1"
+    
+    "express": "^4.16.4"
+    
+    "node-fetch": "^2.6.0"
+    
+   devDependencies
+   
+      "gulp": "^4.0.2",
+      
+      "gulp-clean-css": "^4.3.0",
+      
+      "gulp-concat-css": "^3.1.0",
+      
+      "nodemon": "^2.0.2"
+
+  
 ## Live prototype
-Link will appear at some point
+<a href="https://fierce-mesa-63813.herokuapp.com/people/" target="_blank">Live prototype link</a>
+
 
 ## Audits performance
 I had a hard time trying to make the app as fast as possible. The API has very slow response times and from time to time a bit unreliable.

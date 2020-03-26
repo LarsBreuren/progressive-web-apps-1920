@@ -4,7 +4,7 @@
     "description": "All the data you need about star wars!",
     "start_url": "/",
     "background_color": "#000000",
-    "theme_color": "##FFFF00",
+    "theme_color": "#FFFF00",
     "icons": [{
       "src": "img/icon.png",
       "sizes": "256x256",

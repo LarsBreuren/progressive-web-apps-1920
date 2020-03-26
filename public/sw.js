@@ -1,10 +1,10 @@
-const CORE_CACHE = 1
+const CORE_CACHE = 2
 const CORE_ASSETS = [
   '/offline',
   '/css/minified/style.css',
-  'img/bg.jpg',
-  'img/favicon.ico',
-  ''
+  '/img/bg.jpg',
+  '/img/favicon.ico',
+  
 ]
 
 self.addEventListener('install', event => {
@@ -36,9 +36,9 @@ self.addEventListener('fetch', event => {
         // generic fallback
         event.respondWith(
     
-          caches.open('html-cache')
+          caches.open(CORE_CACHE)
             .then(cache => cache.match(event.request.url))
-            .then(response => response ? response : fetchAndCache(event.request, 'html-cache'))
+            .then(response => response ? response : fetchAndCache(event.request, CORE_CACHE))
             .catch(e => {
               return caches.open(CORE_CACHE)
                 .then(cache => cache.match('/offline'))

@@ -58,7 +58,7 @@ This time i've made the app responsive and i have added a manifest file, seems t
 ![audit2](https://user-images.githubusercontent.com/43336468/77447088-90130b80-6def-11ea-9165-19df5f56e349.png)
 
 ### Third audit
-Removed unnecesairy blocks of code and packages. Slight improvement but still noticable in the audits.
+Removed unnecesairy blocks of code and packages. No performance boost unfortunatly but the code is cleaner now.
 ![Screenshot_3](https://user-images.githubusercontent.com/43336468/77692166-6ea85000-6fa6-11ea-9f96-11bb06b1eef8.png)
 
 ## conclusion

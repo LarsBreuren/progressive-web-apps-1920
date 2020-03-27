@@ -4,7 +4,6 @@ const CORE_ASSETS = [
   '/css/minified/style.css',
   '/img/bg.jpg',
   '/img/favicon.ico',
-  
 ]
 
 self.addEventListener('install', event => {

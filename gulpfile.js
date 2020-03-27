@@ -4,9 +4,9 @@ const concat = require('gulp-concat-css');
 
 gulp.task('buildCss', () => {
   return gulp.src('public/css/*.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(concat('style.css'))
-    .pipe(gulp.dest('public/css/minified'));
+  .pipe(concat('style.css'))
+  .pipe(cleanCSS({compatibility: 'ie8'}))
+  .pipe(gulp.dest('public/css/minified'));
 });
 
 gulp.task('watch', function(){

@@ -1,15 +1,18 @@
-module.exports = function(app){
+module.exports = function (app) {
     const fetch = require('node-fetch');
-// Create a home route
-app.get('/', function (req, res) {
-    res.render('overview')
-})
-app.get('/offline', function (req, res) {
-res.render('offline')
-})
+    // Create a home route
+    app.get('/', function (req, res) {
+        res.render('overview')
+    })
+    app.get('/about', function (req, res) {
+        res.render('about')
+    })
+    app.get('/offline', function (req, res) {
+        res.render('offline')
+    })
 
     app.get('/:cato', function (req, res) {
-        
+
         let cat = req.params.cato;
         console.log("catogorie is " + cat);
 

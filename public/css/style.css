@@ -23,6 +23,9 @@ body {
 	background-position: cover;
 	margin: 0;
 }
+.textPage p{
+  color: #fff;
+}
 .details article,
 section a {
     border: 2px solid #fff;

@@ -65,6 +65,19 @@ Removed unnecesairy blocks of code and packages. No performance boost unfortunat
 ## Conclusion
 It is a bit hard to determene how much improvement you make because the app is very small. The audits do show show improvement so you can tell what you're doing is working but i think the PWA functionalities will shine more on bigger projects. Personally i was suprised what you could do with PWA's. I didn't even know you could use websites offline besides the offline page, cool stuff. The steps i made in the audits did make some improvement every step so that was cool to see. Overal very happy and learned a lot :).
 
+### Things i learned:
+#### Server vs client side
+I've learned how to server side render and what the advantages are if you render server side vs client side.
+
+When rendering client side the browser does most of the work filling in pages with a JavaScript file.
+While with server side rendering the rendering is done at the server with a templating engine (ejs/pug etc.). This means the server will serve pages filled in with content allready, so no need for JS to run client side to load the content, cool right?
+
+The inital page load is faster while using server side rendering, SPA's download a almost complete website but this means page loads after the initial load are faster since they only have to render that page.
+
+A good thing about server side is that low-end devices don't have to render as much, so using server side would be a good thing for users that use low-end devices.
+
+I've learned that server side rendering is better for the SEO since the data is served the way people would read it. This makes it easier for google bots to read your website.
+
 ## Sources
 - Docs of the used packages
 - EJS & Express documentation

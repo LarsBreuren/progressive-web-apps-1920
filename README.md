@@ -89,7 +89,7 @@ Service worker life cycle:
 4. Terminated / fetch / message
 
 #### Critical render path
-Improving the critical render path is a must have if you want to improve your app performance. The goal is to basicly prioritize what a users needs on a page and render that first. So for example the main text is better to load first rather then a decorative background image. A thing to keep in mind is the time to interactive, nothing more anoying then a button that doesn't respond for over 5 seconds.
+Improving the critical render path is a must have if you want to improve your app performance. The goal is to basicly prioritize what a user needs on a page and render that first. So for example the main text is better to load first rather then a decorative background image. A thing to keep in mind is the time to interactive, nothing more anoying then a button that doesn't respond for over 5 seconds.
 
 A big diffrence is reducing the size of the used files, this directly reduces download speed and so on boosts performance.
 You can use minifiers to remove unnecessary characters, this proces can also be done automaticly with for example gulp. 

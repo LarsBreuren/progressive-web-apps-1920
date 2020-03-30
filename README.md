@@ -65,7 +65,6 @@ Removed unnecesairy blocks of code and packages. No performance boost unfortunat
 ## Conclusion
 It is a bit hard to determene how much improvement you make because the app is very small. The audits do show show improvement so you can tell what you're doing is working but i think the PWA functionalities will shine more on bigger projects. Personally i was suprised what you could do with PWA's. I didn't even know you could use websites offline besides the offline page, cool stuff. The steps i made in the audits did make some improvement every step so that was cool to see. Overal very happy and learned a lot :).
 
-### Things i learned:
 #### Server vs client side
 I've learned how to server side render and what the advantages are if you render server side vs client side.
 
@@ -89,6 +88,14 @@ Service worker life cycle:
 3. Idle
 4. Terminated / fetch / message
 
+#### Critical render path
+Improving the critical render path is a must have if you want to improve your app performance. The goal is to basicly prioritize what a users needs on a page and render that first. So for example the main text is better to load first rather then a decorative background image. A thing to keep in mind is the time to interactive, nothing more anoying then a button that doesn't respond for over 5 seconds.
+
+A big diffrence is reducing the size of the used files, this directly reduces download speed and so on boosts performance.
+You can use minifiers to remove unnecessary characters, this proces can also be done automaticly with for example gulp. 
+A good practice would be to bundle your CSS files to 1 minified file.
+Another thing you could do is caching pages to reduce the waiting time on reloads.
+Another thing you could do is preventing the CSS from render blocking with preloads, these remove the stylesheet tag temporarily so the rendering of the CSS is not blocking but asynchronously.
 
 ## Sources
 - Docs of the used packages

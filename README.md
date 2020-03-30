@@ -62,6 +62,13 @@ Removed unnecesairy blocks of code and packages. No performance boost unfortunat
 ![Screenshot_3](https://user-images.githubusercontent.com/43336468/77692166-6ea85000-6fa6-11ea-9f96-11bb06b1eef8.png)
 
 ## conclusion
+It is a bit hard to determene how much improvement you make because the app is very small. The audits do show show improvement so you can tell what you're doing is working but i think the PWA functionalities will shine more on bigger projects. Personally i was suprised what you could do with PWA's. I didn't even know you could use websites offline besides the offline page, cool stuff. The steps i made in the audits did make some improvement every step so that was cool to see. Overal very happy and learned a lot :).
+
+## Sources
+- Docs of the used packages
+- EJS & Express documentation
+- Declan Rek his code for the service worker
+
 
 
 

@@ -78,6 +78,18 @@ A good thing about server side is that low-end devices don't have to render as m
 
 I've learned that server side rendering is better for the SEO since the data is served the way people would read it. This makes it easier for google bots to read your website.
 
+#### Service workers
+I've learned that you can use a serviceworker for alot of cool stuff (with promises). 
+For example that you can cache pages and if a user request a page that is cached the SW will grab the cached page instead of going to the server, great performance. So it's basicly a intermediary for the user and server. With this you can make websites work offline for when the user loses connection or send them push notifications like a real app. The SW keeps being registered even when the internet connection is gone.
+You can determine when or when not to use SW's to make them perform the way you them to.
+
+Service worker life cycle:
+1. Installing
+2. Activate / error
+3. Idle
+4. Terminated / fetch / message
+
+
 ## Sources
 - Docs of the used packages
 - EJS & Express documentation

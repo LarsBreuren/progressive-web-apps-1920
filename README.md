@@ -5,7 +5,8 @@
 - [Install](#installation)
 - [Live prototype](#live-prototype)
 - [Audits performance](#audits-performance)
-- [Conslusion](#conclusion)
+- [Conclusion](#conclusion)
+- [Sources](#sources)
 
 ![Screenshot_5](https://user-images.githubusercontent.com/43336468/76844943-59ad1d80-683e-11ea-8a24-b14bf41eae25.png)
 
@@ -61,7 +62,52 @@ This time i've made the app responsive and i have added a manifest file, seems t
 Removed unnecesairy blocks of code and packages. No performance boost unfortunatly but the code is cleaner now.
 ![Screenshot_3](https://user-images.githubusercontent.com/43336468/77692166-6ea85000-6fa6-11ea-9f96-11bb06b1eef8.png)
 
-## conclusion
+## Conclusion
+It is a bit hard to determene how much improvement you make because the app is very small. The audits do show show improvement so you can tell what you're doing is working but i think the PWA functionalities will shine more on bigger projects. Personally i was suprised what you could do with PWA's. I didn't even know you could use websites offline besides the offline page, cool stuff. The steps i made in the audits did make some improvement every step so that was cool to see. Overal very happy and learned a lot :).
+
+#### Server vs client side
+I've learned how to server side render and what the advantages are if you render server side vs client side.
+
+When rendering client side the browser does most of the work filling in pages with a JavaScript file.
+While with server side rendering the rendering is done at the server with a templating engine (ejs/pug etc.). This means the server will serve pages filled in with content allready, so no need for JS to run client side to load the content, cool right?
+
+The inital page load is faster while using server side rendering, SPA's download a almost complete website but this means page loads after the initial load are faster since they only have to render that page.
+
+A good thing about server side is that low-end devices don't have to render as much, so using server side would be a good thing for users that use low-end devices.
+
+I've learned that server side rendering is better for the SEO since the data is served the way people would read it. This makes it easier for google bots to read your website.
+
+My app: I retrieve data from the SWAPI API and render them serverside with EJS. This way the website can run without client side javascript.
+
+#### Service workers
+I've learned that you can use a serviceworker for alot of cool stuff (with promises). 
+For example that you can cache pages and if a user request a page that is cached the SW will grab the cached page instead of going to the server, great performance. So it's basicly a intermediary for the user and server. With this you can make websites work offline for when the user loses connection or send them push notifications like a real app. The SW keeps being registered even when the internet connection is gone.
+You can determine when or when not to use SW's to make them perform the way you want them to.
+
+Service worker life cycle:
+1. Installing
+2. Activate / error
+3. Idle
+4. Terminated / fetch / message
+
+My app: I have a server worker that by default caches a set of pages and critical files. It will cache pages that are visited and will run them offline when internet is turned off.
+
+#### Critical render path
+Improving the critical render path is a must have if you want to improve your app performance. The goal is to basicly prioritize what a user needs on a page and render that first. So for example the main text is better to load first rather then a decorative background image. A thing to keep in mind is the time to interactive, nothing more anoying then a button that doesn't respond for over 5 seconds.
+
+A big diffrence is reducing the size of the used files, this directly reduces download speed and so on boosts performance.
+You can use minifiers to remove unnecessary characters, this proces can also be done automaticly with for example gulp. 
+A good practice would be to bundle your CSS files to 1 minified file.
+Another thing you could do is caching pages to reduce the waiting time on reloads.
+Another thing you could do is preventing the CSS from render blocking with preloads, these remove the stylesheet tag temporarily so the rendering of the CSS is not blocking but asynchronously.
+
+My app works with gulp, gulp cleanCss and gulp concat, i bundle and minify all my CSS files. This works with a watcher so the progress is automated.
+
+## Sources
+- Docs of the used packages
+- EJS & Express documentation
+- Declan Rek his code for the service worker
+
 
 
 

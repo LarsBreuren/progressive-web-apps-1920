@@ -14,7 +14,7 @@
 	font-family: 'Open Sans', sans-serif;
   }
 
-h1{ color: #fff; font-size: 2em; text-align: center;}
+h1 { color: #fff; font-size: 2em; text-align: center;}
 
 body {
 	background-color: #000;
@@ -25,7 +25,9 @@ body {
 }
 .textPage p{
   color: #fff;
+  text-align: center;
 }
+
 .details article,
 section a {
     border: 2px solid #fff;
